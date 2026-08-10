@@ -1,0 +1,134 @@
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% / 3));
+  }
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #b3b524;
+  padding: 40px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.scroll {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.scroll::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 160px;
+  background: linear-gradient(90deg, #b3b524 0%, #b3b524 40%, rgba(179, 181, 36, 0) 100%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.scroll::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 160px;
+  background: linear-gradient(270deg, #b3b524 0%, #b3b524 40%, rgba(179, 181, 36, 0) 100%);
+  z-index: 10;
+  pointer-events: none;
+}
+
+.scrollContent {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  animation: scroll 30s linear infinite;
+  will-change: transform;
+}
+
+.logo {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: brightness(0) invert(1) opacity(0.9);
+}
+
+.logoBig {
+  height: 88px;
+}
+
+.chip {
+  font-size: 13px;
+  font-weight: 500;
+  color: #353c42;
+  white-space: nowrap;
+  flex-shrink: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+@media (max-width: 860px) {
+  .carousel {
+    padding: 24px;
+    gap: 20px;
+  }
+
+  .scrollContent {
+    gap: 24px;
+    animation: scroll 25s linear infinite;
+  }
+
+  .logo {
+    height: 40px;
+  }
+
+  .logoBig {
+    height: 56px;
+  }
+}
+
+@media (max-width: 560px) {
+  .carousel {
+    padding: 32px 16px;
+    gap: 16px;
+  }
+
+  .logo {
+    height: 32px;
+  }
+
+  .logoBig {
+    height: 44px;
+  }
+
+  .scrollContent {
+    gap: 16px;
+    animation: scroll 20s linear infinite;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+}

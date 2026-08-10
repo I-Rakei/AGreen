@@ -1,0 +1,114 @@
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.intro p + p {
+  margin-top: 16px;
+}
+
+.valuesList {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.valuesList li {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 15px;
+}
+
+.valuesList svg {
+  color: #b3b524;
+  margin-top: 5px;
+  flex-shrink: 0;
+}
+
+.mdSection {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+.mdPhoto {
+  width: 320px;
+  max-width: 320px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  object-fit: fill;
+  border: 4px solid #b3b524;
+}
+
+.mdMeta {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--color-border);
+  text-align: center;
+}
+
+.mdName {
+  font-size: 20px;
+  font-weight: 600;
+  color: #353c42;
+}
+
+.mdRole {
+  margin-top: 4px;
+  color: #b3b524;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.mdQuals {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 32px;
+}
+
+.mdQualItem {
+  font-size: 15px;
+  font-weight: 600;
+  color: #353c42;
+}
+
+.mdBio p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.mdBio p + p {
+  margin-top: 16px;
+}
+
+.closingCta {
+  text-align: center;
+}
+
+.closingCta p {
+  color: var(--color-text-muted);
+  max-width: 480px;
+  margin: 16px auto 0;
+}
+
+.ctaActions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+@media (max-width: 860px) {
+  .intro,
+  .mdSection {
+    grid-template-columns: 1fr;
+  }
+}

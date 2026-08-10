@@ -1,0 +1,9 @@
+.closingCta {
+  text-align: center;
+}
+
+.closingCta p {
+  color: var(--color-text-inverse-muted);
+  max-width: 480px;
+  margin: 16px auto 32px;
+}

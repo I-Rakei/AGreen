@@ -1,0 +1,23 @@
+.heading {
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.subtitle {
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-text-muted);
+}
+
+:global(.section--dark) .subtitle {
+  color: var(--color-text-inverse-muted);
+}

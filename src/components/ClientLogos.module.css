@@ -1,0 +1,26 @@
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px 40px;
+}
+
+.logo {
+  height: 30px;
+  width: auto;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
+.chip {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-text-inverse-muted);
+  padding: 10px 18px;
+  border: 1px solid rgba(245, 247, 239, 0.2);
+  border-radius: 999px;
+}
