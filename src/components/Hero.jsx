@@ -18,7 +18,7 @@ function Hero({
     <section
       className={`${styles.hero} ${compact ? styles.compact : ''} ${overlapNav ? styles.overlapNav : ''} ${large ? styles.large : ''} ${centered ? styles.centered : ''}`.trim()}
     >
-      <img className={styles.bg} src={photos[image]} alt="" />
+      <img className={styles.bg} src={photos[image]} alt="" fetchPriority="high" />
       <div className={styles.overlayDark} />
       <div className={styles.overlay} />
       <div className={styles.content}>

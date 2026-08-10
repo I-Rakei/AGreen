@@ -12,7 +12,7 @@ function ProjectModal({ project, onClose }) {
         <button type="button" className={styles.close} aria-label="Close" onClick={onClose}>
           <FontAwesomeIcon icon={faXmark} />
         </button>
-        <img className={styles.image} src={photos[project.image]} alt={project.name} />
+        <img className={styles.image} src={photos[project.image]} alt={project.name} loading="lazy" />
         <div className={styles.body}>
           <h3 className={styles.title}>{project.name}</h3>
           <p className={styles.spec}>{project.spec}</p>

@@ -59,7 +59,7 @@ function About() {
         <Container>
           <SectionHeading title="Meet our Managing Director" />
           <div className={styles.mdSection}>
-            <img className={styles.mdPhoto} src={founderPhoto} alt={md.name} />
+            <img className={styles.mdPhoto} src={founderPhoto} alt={md.name} loading="lazy" />
             <div className={styles.mdBio}>
               {md.bio.map((paragraph) => (
                 <p key={paragraph.slice(0, 24)}>{paragraph}</p>

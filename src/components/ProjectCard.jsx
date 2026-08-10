@@ -6,7 +6,7 @@ import styles from './ProjectCard.module.css'
 function ProjectCard({ project, onView }) {
   return (
     <button type="button" className={styles.card} onClick={() => onView(project)}>
-      <img className={styles.bg} src={photos[project.image]} alt="" />
+      <img className={styles.bg} src={photos[project.image]} alt={project.name} loading="lazy" />
       <div className={styles.overlay} />
       <div className={styles.body}>
         <span className={styles.tag}>{project.tag}</span>

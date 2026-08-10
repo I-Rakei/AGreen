@@ -1,0 +1,27 @@
+.wrap {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.code {
+  font-family: var(--font-heading);
+  font-size: 72px;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: 0;
+}
+
+.text {
+  margin-top: 16px;
+  color: var(--color-text-muted);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+  flex-wrap: wrap;
+}

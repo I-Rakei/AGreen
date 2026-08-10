@@ -57,7 +57,11 @@ function Home() {
               </Button>
             </div>
             <div className={styles.splitImage}>
-              <img src={photos['turbines-panels-landscape']} alt="Wind turbines and solar panels" />
+              <img
+                src={photos['turbines-panels-landscape']}
+                alt="Wind turbines and solar panels"
+                loading="lazy"
+              />
             </div>
           </div>
         </Container>
@@ -85,7 +89,11 @@ function Home() {
         <Container>
           <div className={`${styles.split} ${styles.reverse}`}>
             <div className={styles.splitImage}>
-              <img src={photos['hardhat-closeup-wide']} alt="Solar installer on site" />
+              <img
+                src={photos['hardhat-closeup-wide']}
+                alt="Solar installer on site"
+                loading="lazy"
+              />
             </div>
             <div className={styles.splitText}>
               <h2>{funding.title}</h2>

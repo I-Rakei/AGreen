@@ -44,7 +44,7 @@ function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.cta}>
-        <img className={styles.ctaBg} src={photos[ctaBanner.image]} alt="" />
+        <img className={styles.ctaBg} src={photos[ctaBanner.image]} alt="" loading="lazy" />
         <div className={styles.ctaOverlay} />
         <Container>
           <div className={styles.ctaContent}>
@@ -65,7 +65,7 @@ function Footer() {
       <Container>
         <div className={styles.top}>
           <div className={styles.brand}>
-            <img src={asiyeGreenLogo} alt="Asiye Green" />
+            <img src={asiyeGreenLogo} alt="Asiye Green" loading="lazy" />
             <p>
               Helping South African organisations cut energy costs and generate power onsite
               through solar PV, storage, and efficiency projects since {company.founded}.

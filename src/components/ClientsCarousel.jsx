@@ -17,6 +17,7 @@ function ClientsCarousel() {
               className={`${styles.logo} ${client.name === 'GIBS' ? styles.logoBig : ''}`}
               src={clientLogos[client.image]}
               alt={client.name}
+              loading="lazy"
             />
           ))}
         </div>

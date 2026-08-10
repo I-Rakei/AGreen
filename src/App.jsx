@@ -10,6 +10,7 @@ import Services from './pages/Services'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import Privacy from './pages/Privacy'
+import NotFound from './pages/NotFound'
 import './App.css'
 
 function useScrollToTop() {
@@ -57,6 +58,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<Privacy />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />

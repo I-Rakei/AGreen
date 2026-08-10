@@ -55,6 +55,7 @@ function ServicesShowcase() {
         className={`${styles.bg} ${bgLayers.top === 0 ? styles.bgTop : ''}`}
         src={bgLayers.images[0]}
         alt=""
+        fetchPriority="high"
       />
       <img
         className={`${styles.bg} ${bgLayers.top === 1 ? styles.bgTop : ''}`}
