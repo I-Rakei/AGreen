@@ -27,7 +27,7 @@ function Home() {
         overlapNav
         large
         centered
-        image="panels-turbines-wide"
+        image="hero"
         title="Manage your power consumption easily and effectively and benefit from natural resources"
         subtitle="Reduce the cost of running your business and increase your profit."
         actions={[

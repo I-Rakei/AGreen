@@ -19,7 +19,7 @@ function About() {
   return (
     <>
       <Hero
-        image="panels-sunburst-wide"
+        image="real-about-hero"
         title="About Us"
         subtitle="Asiye Green was established in 2015 to make the most of growing climate concerns and local demand for cheaper, dependable energy."
         compact

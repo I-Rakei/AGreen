@@ -55,6 +55,7 @@ export const navLinks = [
     },
   },
   { label: 'Projects', path: '/projects' },
+  { label: 'Contact Us', path: '/contact' },
 ]
 
 export const heroStats = [
@@ -184,7 +185,7 @@ export const projects = [
     spec: 'Roof-mounted PV panels',
     description:
       'A home powered by the sun with an Asiye Green solar-PV system, with panels mounted on the roof.',
-    image: 'rooftop-panels',
+    image: 'real-residential-solar',
   },
   {
     slug: 'kyalami-solar-pv',
@@ -193,7 +194,7 @@ export const projects = [
     spec: 'Victron EasySolar inverter, Pylontech lithium-ion batteries',
     description:
       'Panels mounted on a flat roof, our first time using this approach, with Renusol\'s ConSole+ assembly system and an East-West orientation. Thanks to Mpumi for the opportunity.',
-    image: 'installer-drilling',
+    image: 'real-kyalami-solar',
   },
   {
     slug: 'sunninghill-solar-pv',
@@ -202,7 +203,7 @@ export const projects = [
     spec: 'Added to existing inverter and batteries',
     description:
       'The house already had an inverter and batteries for load shedding and outages. Asiye Green added PV panels so solar can power the home by day and charge the batteries.',
-    image: 'installers-roof',
+    image: 'real-sunninghill-solar',
   },
   {
     slug: 'sunninghill-solar-pv-lithium',
@@ -211,7 +212,7 @@ export const projects = [
     spec: 'Lithium-ion battery storage',
     description:
       'A solar PV system with lithium-ion batteries commissioned for customers in Sunninghill, praised for fast, high-quality workmanship.',
-    image: 'installer-black-panel',
+    image: 'real-sunninghill-lithium',
   },
   {
     slug: 'victron-easysolar-ii',
@@ -220,7 +221,7 @@ export const projects = [
     spec: '3 kW Victron EasySolar II, Pylontech batteries, Canadian Solar panels',
     description:
       'A Fourways installation completed during Level 2 load shedding. The household continued operating within five minutes of commissioning during the outage.',
-    image: 'worker-tablet',
+    image: 'real-victron-easysolar',
   },
 ]
 

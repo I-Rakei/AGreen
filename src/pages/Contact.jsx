@@ -13,7 +13,7 @@ function Contact() {
   return (
     <>
       <Hero
-        image="rooftop-panels"
+        image="real-contact-hero"
         title="Contact Us"
         subtitle="Call us, write to us, or knock on our door, we look forward to discussing your energy-saving needs."
         compact

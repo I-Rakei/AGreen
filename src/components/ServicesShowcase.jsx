@@ -8,7 +8,7 @@ import Button from './Button'
 import styles from './ServicesShowcase.module.css'
 
 const serviceImages = {
-  'energy-efficient-services': 'worker-tablet',
+  'energy-efficient-services': 'real-services-hero',
   'energy-efficient-products': 'hardhat-closeup-wide',
   'solar-pv-systems': 'panels-turbines-wide',
   'battery-energy-storage': 'warehouse-sunset-wide',

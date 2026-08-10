@@ -2,11 +2,13 @@ import { useEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
+import Privacy from './pages/Privacy'
 import './App.css'
 
 function useScrollToTop() {
@@ -52,9 +54,11 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<Privacy />} />
         </Routes>
       </main>
       <Footer />
+      <ScrollToTop />
     </>
   )
 }

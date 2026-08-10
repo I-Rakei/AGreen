@@ -114,7 +114,7 @@ function Footer() {
 
         <div className={styles.bottom}>
           <span>© {year} Copyright Asiye Green. All rights reserved.</span>
-          <Link to="/contact">Privacy Policy</Link>
+          <Link to="/privacy-policy">Privacy Policy</Link>
         </div>
       </Container>
     </footer>

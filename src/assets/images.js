@@ -15,6 +15,15 @@ import workerPanelsPortrait from './photos/worker-panels-portrait.jpg'
 import houseRooftopPortrait from './photos/house-rooftop-portrait.jpg'
 import aerialFarmPortrait from './photos/aerial-farm-portrait.jpg'
 import turbinesPanelsLandscape from './photos/turbines-panels-landscape.jpg'
+import realAboutHero from './photos/real-about-hero.jpg'
+import realContactHero from './photos/real-contact-hero.jpg'
+import realServicesHero from './photos/real-services-hero.jpg'
+import realResidentialSolar from './photos/real-residential-solar.jpg'
+import realKyalamiSolar from './photos/real-kyalami-solar.jpg'
+import realSunninghillSolar from './photos/real-sunninghill-solar.jpg'
+import realSunninghillLithium from './photos/real-sunninghill-lithium.jpg'
+import realVictronEasysolar from './photos/real-victron-easysolar.jpg'
+import heroPhoto from './photos/hero.jpg'
 
 export const photos = {
   'panels-turbines-wide': panelsTurbinesWide,
@@ -34,6 +43,15 @@ export const photos = {
   'house-rooftop-portrait': houseRooftopPortrait,
   'aerial-farm-portrait': aerialFarmPortrait,
   'turbines-panels-landscape': turbinesPanelsLandscape,
+  'real-about-hero': realAboutHero,
+  'real-contact-hero': realContactHero,
+  'real-services-hero': realServicesHero,
+  'real-residential-solar': realResidentialSolar,
+  'real-kyalami-solar': realKyalamiSolar,
+  'real-sunninghill-solar': realSunninghillSolar,
+  'real-sunninghill-lithium': realSunninghillLithium,
+  'real-victron-easysolar': realVictronEasysolar,
+  hero: heroPhoto,
 }
 
 import iconWorker from './icons/icon-worker.png'
