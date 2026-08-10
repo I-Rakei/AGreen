@@ -3,7 +3,6 @@ import { NavLink, useLocation } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark, faChevronDown, faChevronRight } from '@fortawesome/free-solid-svg-icons'
 import Container from './Container'
-import Button from './Button'
 import { navLinks } from '../data/content'
 import { asiyeGreenLogo, asiyeGreenLogoMono } from '../assets/images'
 import styles from './Navbar.module.css'
@@ -67,9 +66,6 @@ function Navbar() {
           </nav>
 
           <div className={styles.actions}>
-            <Button to="/contact" variant="primary">
-              Contact Us
-            </Button>
             <button
               type="button"
               className={styles.toggle}
