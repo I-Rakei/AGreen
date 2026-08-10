@@ -6,7 +6,7 @@ import Hero from '../components/Hero'
 import SectionHeading from '../components/SectionHeading'
 import ValueCard from '../components/ValueCard'
 import ServiceCard from '../components/ServiceCard'
-import ProjectCard from '../components/ProjectCard'
+import ProjectsCarousel from '../components/ProjectsCarousel'
 import ProjectModal from '../components/ProjectModal'
 import ClientsCarousel from '../components/ClientsCarousel'
 import Button from '../components/Button'
@@ -16,9 +16,6 @@ import styles from './Home.module.css'
 
 const featuredServices = services.filter((s) =>
   ['energy-efficient-services', 'solar-pv-systems', 'battery-energy-storage'].includes(s.slug),
-)
-const featuredProjects = projects.filter((p) =>
-  ['sunninghill-solar-pv', 'kyalami-solar-pv'].includes(p.slug),
 )
 
 function Home() {
@@ -126,11 +123,7 @@ function Home() {
             title="We deliver only the best projects"
             subtitle="Whatever your project, we can help, our work inspires smiles."
           />
-          <div className="grid grid--2">
-            {featuredProjects.map((project) => (
-              <ProjectCard key={project.slug} project={project} onView={setActiveProject} />
-            ))}
-          </div>
+          <ProjectsCarousel projects={projects} onView={setActiveProject} />
           <div style={{ textAlign: 'center', marginTop: 40 }}>
             <Button to="/projects" variant="outline">
               More info

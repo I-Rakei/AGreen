@@ -12,8 +12,15 @@
   inset: 0;
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
   z-index: 0;
+  opacity: 0;
+  transition: opacity 1500ms ease;
+}
+
+.bgTop {
+  opacity: 1;
+  z-index: 1;
 }
 
 .overlay {
@@ -37,6 +44,18 @@
 
 .textBlock {
   max-width: 560px;
+  animation: contentIn 1500ms ease;
+}
+
+@keyframes contentIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .title {
@@ -92,7 +111,7 @@
   font-size: 15px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 1500ms ease, color 1500ms ease;
   text-align: center;
   line-height: 1.3;
 }

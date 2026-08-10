@@ -9,6 +9,14 @@ import Projects from './pages/Projects'
 import Contact from './pages/Contact'
 import './App.css'
 
+function useScrollToTop() {
+  const { pathname } = useLocation()
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+}
+
 function useScrollReveal() {
   const { pathname } = useLocation()
 
@@ -31,6 +39,7 @@ function useScrollReveal() {
 }
 
 function App() {
+  useScrollToTop()
   useScrollReveal()
 
   return (

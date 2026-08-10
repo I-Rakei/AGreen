@@ -2,9 +2,7 @@ import Container from '../components/Container'
 import ServicesShowcase from '../components/ServicesShowcase'
 import SectionHeading from '../components/SectionHeading'
 import ServiceCard from '../components/ServiceCard'
-import Button from '../components/Button'
 import { services } from '../data/content'
-import styles from './Services.module.css'
 
 function Services() {
   return (
@@ -21,21 +19,6 @@ function Services() {
             {services.map((service) => (
               <ServiceCard key={service.slug} service={service} />
             ))}
-          </div>
-        </Container>
-      </section>
-
-      <section className="section section--dark">
-        <Container>
-          <div className={styles.closingCta}>
-            <h2>We provide solutions for energy efficiency and independence</h2>
-            <p>
-              Tell us about your facility and budget constraints, our engineering and financial
-              team will help you find a way forward.
-            </p>
-            <Button to="/contact" variant="primary">
-              Contact Us
-            </Button>
           </div>
         </Container>
       </section>

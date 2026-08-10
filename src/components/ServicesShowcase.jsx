@@ -19,6 +19,10 @@ const AUTO_CYCLE_MS = 5000
 
 function ServicesShowcase() {
   const [activeIndex, setActiveIndex] = useState(0)
+  const [bgLayers, setBgLayers] = useState(() => {
+    const initial = photos[serviceImages[services[0].slug]]
+    return { images: [initial, initial], top: 0 }
+  })
   const timerRef = useRef(null)
   const active = services[activeIndex]
 
@@ -29,6 +33,17 @@ function ServicesShowcase() {
     return () => clearInterval(timerRef.current)
   }, [activeIndex])
 
+  useEffect(() => {
+    const nextImage = photos[serviceImages[active.slug]]
+    setBgLayers((prev) => {
+      if (prev.images[prev.top] === nextImage) return prev
+      const back = prev.top === 0 ? 1 : 0
+      const images = [...prev.images]
+      images[back] = nextImage
+      return { images, top: back }
+    })
+  }, [activeIndex, active.slug])
+
   function selectTab(index) {
     clearInterval(timerRef.current)
     setActiveIndex(index)
@@ -36,12 +51,21 @@ function ServicesShowcase() {
 
   return (
     <section className={styles.showcase}>
-      <img className={styles.bg} src={photos[serviceImages[active.slug]]} alt="" />
+      <img
+        className={`${styles.bg} ${bgLayers.top === 0 ? styles.bgTop : ''}`}
+        src={bgLayers.images[0]}
+        alt=""
+      />
+      <img
+        className={`${styles.bg} ${bgLayers.top === 1 ? styles.bgTop : ''}`}
+        src={bgLayers.images[1]}
+        alt=""
+      />
       <div className={styles.overlay} />
 
       <div className={styles.content}>
         <Container>
-          <div className={styles.textBlock}>
+          <div className={styles.textBlock} key={active.slug}>
             <h1 className={styles.title}>
               {active.title} <FontAwesomeIcon icon={faChevronRight} className={styles.titleArrow} />
             </h1>

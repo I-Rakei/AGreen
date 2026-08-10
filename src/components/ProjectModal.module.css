@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   padding: 24px;
+  animation: backdropIn 0.3s ease;
 }
 
 .modal {
@@ -20,6 +21,34 @@
   border-radius: var(--radius-lg);
   scrollbar-width: none;
   -ms-overflow-style: none;
+  animation: modalIn 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@keyframes backdropIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalIn {
+  from {
+    opacity: 0;
+    transform: translateY(24px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .backdrop,
+  .modal {
+    animation: none;
+  }
 }
 
 .modal::-webkit-scrollbar {
@@ -29,7 +58,7 @@
 .image {
   width: 100%;
   height: 320px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .close {

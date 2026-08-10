@@ -5,7 +5,6 @@ import Hero from '../components/Hero'
 import SectionHeading from '../components/SectionHeading'
 import ValueCard from '../components/ValueCard'
 import ClientsCarousel from '../components/ClientsCarousel'
-import Button from '../components/Button'
 import { md, proofPoints } from '../data/content'
 import { founderPhoto } from '../assets/images'
 import styles from './About.module.css'
@@ -94,26 +93,6 @@ function About() {
 
       <section style={{ padding: 0, margin: '0 calc(-50vw + 50%)' }}>
         <ClientsCarousel />
-      </section>
-
-      <section className="section">
-        <Container>
-          <div className={styles.closingCta}>
-            <h2>Need efficient energy solutions?</h2>
-            <p>
-              We examine every detail of your operation to secure at least 30% in energy-cost
-              savings, let's do it together.
-            </p>
-            <div className={styles.ctaActions}>
-              <Button to="/services" variant="primary">
-                Our Services
-              </Button>
-              <Button to="/contact" variant="outline">
-                Contact Us
-              </Button>
-            </div>
-          </div>
-        </Container>
       </section>
     </>
   )

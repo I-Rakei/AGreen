@@ -50,9 +50,14 @@ function Footer() {
           <div className={styles.ctaContent}>
             <h2>{ctaBanner.title}</h2>
             <p>{ctaBanner.text}</p>
-            <Button to="/contact" variant="primary">
-              Get in touch
-            </Button>
+            <div className={styles.ctaActions}>
+              <Button to="/services" variant="outline">
+                Services
+              </Button>
+              <Button to="/contact" variant="primary">
+                Get in touch
+              </Button>
+            </div>
           </div>
         </Container>
       </div>

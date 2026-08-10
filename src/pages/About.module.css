@@ -41,7 +41,7 @@
   max-width: 320px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
-  object-fit: fill;
+  object-fit: cover;
   border: 4px solid #b3b524;
 }
 
@@ -87,23 +87,6 @@
 
 .mdBio p + p {
   margin-top: 16px;
-}
-
-.closingCta {
-  text-align: center;
-}
-
-.closingCta p {
-  color: var(--color-text-muted);
-  max-width: 480px;
-  margin: 16px auto 0;
-}
-
-.ctaActions {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 32px;
 }
 
 @media (max-width: 860px) {
