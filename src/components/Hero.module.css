@@ -51,7 +51,7 @@
 .overlayDark {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.55);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.22) 0%, rgba(0, 0, 0, 0.55) 100%);
   z-index: 1;
 }
 
@@ -61,7 +61,7 @@
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 0) 80%,
     rgba(255, 255, 255, 1) 100%
   );
   z-index: 2;
